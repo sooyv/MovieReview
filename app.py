@@ -7,7 +7,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://test:sparta@cluster0.y0rajr2.mongodb.net/movies?retryWrites=true&w=majority', tlsCAFile=ca)
+client = MongoClient('', tlsCAFile=ca)
 db = client.dbsparta
 
 @app.route('/')
